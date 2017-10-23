@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Merriweather');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  margin:20px;
+  width:calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  overflow-x: hidden;
+}
+.App{
+  position: relative;
+}
+.navbar{
+  position: sticky;
+  top:10px;
+  z-index: 99;
+  width:100vw;
+}
+.navbar .brand{
+  width: 500px;
+  height: 100px;
+  background:white; 
+  opacity: .8;
+  display: flex;
+  align-items: center;
+}
+.navbar .brand .logo{
+  width:90px;
+  height:100px;
+}
+.navbar .brand div{
+  padding-left: 9px;
+}
+.navbar .brand .title{
+  font-family: 'Merriweather', serif;    
+  text-transform: capitalize;
+}
+.navbar .brand .subtitle{
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #555152;
+  border-bottom: 2px solid #a09d9c;
+}
+#about{
+  padding: 0 20px;
+}
+#about h3{
+  text-decoration: underline;
+  text-decoration-skip: spaces;
+}
+#about h4{
+  font-size: 20px;
+  font-weight: bold;
+}
+#about .skills{
+  height: 40vh;
+}
+#about .skills span{
+  width: 100%;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: #555152;
+  border-bottom: 2px solid #a09d9c;
+}
+#about .skills .row{
+  height:30vh;
+  display:flex;
+  align-items: center;
+}
+#about .links{
+  height: 17vh;
+  padding: 0 10px;
+}
+#about .links ul{
+  height: 80%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .links ul li{
+  margin-right: 20px;
+}
+#about .links ul li a{
+  font-family: 'Merriweather', serif; 
+  font-weight: bold;
+}
